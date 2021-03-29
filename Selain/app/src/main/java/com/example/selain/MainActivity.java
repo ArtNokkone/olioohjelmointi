@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // sulkee softa näppäimistön kun teksti on syötetty
     private void closeKeyBoard(){
         View view = this.getCurrentFocus();
         if (view != null){
@@ -99,8 +100,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
-    // luetaan käyttäjän antama URL
+    // luetaan käyttäjän antaman verkkosivun osoite
     public void readText(View v) {
         // lue osoite näytöltä
         current = url.getText().toString();
@@ -126,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    // selaushistorian scrollaus eteenpäin
     public void scrollForward( View v) {
         if(history.size() > 0) {
             if (historycounter < (history.size() - 1)) historycounter++;
@@ -135,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
         } else System.out.println("list empty");
     }
 
+    // selaushistorian scrollaus taaksepäin
     public void scrollBack(View v) {
         if(history.size() > 0 ) {
             if (historycounter > 0) historycounter--;
@@ -144,20 +146,20 @@ public class MainActivity extends AppCompatActivity {
         } else System.out.println("list empty");
     }
 
-    // tehtävä 3 init
+    // tehtävä 3 - Javascript initialize funktion kutsu
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void initialize(View v) {
 
         selain.evaluateJavascript("javascript:initialize()",null);
     }
 
-    // tehtävä 3 shoutOut funktion
+    // tehtävä 3 - Javascript shoutOut funktion kutsu
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void shoutOut(View v) {
         selain.evaluateJavascript("javascript:shoutOut()",null);
     }
 
-    // URL refresh
+    // refresh toiminto - verkkosivun uudelleenlataus
     public void refresh(View v) {
         selain.loadUrl(current);
     }

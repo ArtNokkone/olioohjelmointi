@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Special Drinks - virvoitusjuomat</string>
+    <string-array name="bottles">
+        <item>Coca Cola - 0.5 l - 1.80 €</item>
+        <item>Coca Cola - 1.5 l - 3.80 €</item>
+        <item>Sprite - 1.5 l - 3.50 €</item>
+        <item>Fanta - 0.3 l - 1.20 €</item>
+        <item>Fanta - 0.5 l - 1.80 €</item>
+    </string-array>
+</resources>

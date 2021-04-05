@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Coca Cola Juoma Automaatit</string>
+    <string-array name="bottles">
+        <item>Coca Cola</item>
+        <item>Sprite</item>
+        <item>Fanta</item>
+    </string-array>
+</resources>

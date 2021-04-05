@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fonttikoko"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <TextView
+        android:layout_width="83dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="20px"
+        android:text="TEXT FORMATTING MENU" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="150px"
+        android:text="READONLY" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="250px">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fontti"
+            android:layout_width="208dp"
+            android:layout_height="match_parent"
+            android:hint="fontti" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="400px">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/merkkikoko"
+            android:layout_width="206dp"
+            android:layout_height="match_parent"
+            android:hint="fonttikoko" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="550px">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fonttityyppi"
+            android:layout_width="204dp"
+            android:layout_height="match_parent"
+            android:hint="fonttityyppi" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="700px">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fontinvari"
+            android:layout_width="204dp"
+            android:layout_height="match_parent"
+            android:hint="fontin väri" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="850px">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nimimerkki"
+            android:layout_width="204dp"
+            android:layout_height="match_parent"
+            android:hint="nimimerkki" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="1000px">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/kieli"
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:hint="kieli" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="178dp"
+        android:layout_height="104dp"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="1200px"
+    android:text="Confirm" />
+
+</FrameLayout>

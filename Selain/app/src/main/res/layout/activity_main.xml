@@ -59,28 +59,30 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="97dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="93dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginRight="204dp"
         android:onClick="shoutOut"
         android:text="SHOUT"
+        app:layout_constraintBottom_toTopOf="@+id/selain"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.748" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="75dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="14dp"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="20dp"
         android:onClick="initialize"
         android:text="INIT"
         app:layout_constraintBottom_toTopOf="@+id/selain"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.622" />
 
     <Button
         android:id="@+id/button4"
@@ -90,22 +92,22 @@
         android:text="NEXT"
         app:layout_constraintBottom_toTopOf="@+id/selain"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintHorizontal_bias="0.952"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextWebAddress"
-        app:layout_constraintVertical_bias="0.253" />
+        app:layout_constraintVertical_bias="0.153" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="76dp"
         android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:onClick="scrollBack"
         android:text="BACK"
         app:layout_constraintBottom_toTopOf="@+id/selain"
         app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.91"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextWebAddress"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.142" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
